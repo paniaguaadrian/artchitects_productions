@@ -1,0 +1,83 @@
+.hero {
+    @include breakpoint-up(large) {
+        display: flex;
+        align-items: center;
+    }
+
+    background-image: linear-gradient($darkblack, $darkpurple);
+    min-height: 46.5rem;
+    text-align: center;
+
+    &__image {
+        display: flex;
+        background-image: url("https://raw.githubusercontent.com/paniaguaadrian/artichitects-productions/master/images/hero__image.png");
+        background-size: 98%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 17.5rem;
+
+        @include breakpoint-up(large) {
+            flex: 2;
+            order: 3;
+            height: 48rem;
+        }
+    }
+
+    &__text {
+        color: $white;
+
+        @include breakpoint-up(large) {
+            flex: 1;
+            order: 1;
+            text-align: left;
+            padding: 0rem 3rem;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-family: $title-font;
+            font-size: $font-med;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+
+            @include breakpoint-up(large) {
+                font-size: $font-lg;
+            }
+        }
+
+        hr {
+            border: 0;
+            width: 90%;
+            height: 2px;
+            background: linear-gradient(to right, #00000000, #bfbfbf, #00000000);
+        }
+
+        p {
+            font-family: $body-font;
+            font-size: $font-vsm;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+
+            @include breakpoint-up(large) {
+                font-size: $font-sm;
+            }
+        }
+
+        button {
+            font-family: $title-font;
+            font-size: $font-but;
+            background-color: transparent;
+            color: $white;
+
+            border: 2px solid $blue;
+            border-radius: 1.875rem;
+            padding: 0.625rem 2.5rem;
+
+            display: inline-block;
+
+            @include breakpoint-up(large) {
+                margin-top: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.services {
+    background-image: linear-gradient(hsl(268, 80%, 33%), $white 30%);
+    text-align: center;
+    align-items: center;
+
+    @include breakpoint-up (large) {
+        background-image: linear-gradient(hsl(268, 80%, 33%), $white 70%);
+        text-align: left;
+        align-items: left;
+    }
+
+    &__header {
+        margin-bottom: 1rem;
+
+        @include breakpoint-up (large) {
+            padding-right: 16rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+
+    h2 {
+        color: $blue;
+        font-size: $font-but;
+
+        @include breakpoint-up (large) {
+            font-size: $font-lg;
+            padding-left: 3rem;
+            padding-right: 3rem;
+
+        }
+    }
+
+    p {
+        font-family: $body-font;
+        font-size: $font-vsm;
+        font-weight: 600;
+        color: $white;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+
+        @include breakpoint-up (large) {
+            font-size: $font-med;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    }
+
+    &__grid {
+
+        @include breakpoint-up (large) {
+            display: flex;
+
+        }
+    }
+
+    &__item {
+        margin-bottom: 3rem;
+
+        @include breakpoint-up (large) {
+            flex: 1;
+            margin-bottom: 1rem;
+
+        }
+    }
+
+
+
+    &__icon {
+        height: 3.125rem;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        @include breakpoint-up (large) {
+            width: 9.375rem;
+            height: 6.25rem;
+            margin: 3rem 3.125rem;
+        }
+
+        img {
+            width: 6.25rem;
+
+            @include breakpoint-up (large) {
+                width: 9.375rem;
+            }
+        }
+
+    }
+
+    &__title {
+        color: $darkpurple;
+
+        @include breakpoint-up (large) {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    }
+
+    &__description {
+        p {
+            color: $darkblack;
+
+            @include breakpoint-up (large) {
+                font-size: $font-sm;
+            }
+        }
+
+    }
+
+    button {
+        font-family: $title-font;
+        font-size: $font-vsm;
+        background-color: $darkpurple;
+        color: $white;
+
+        border: 2px solid $darkpurple;
+        border-radius: 1.875rem;
+        padding: .625rem 2.5rem;
+
+        display: inline-block;
+
+        @include breakpoint-up (large) {
+            background-color: transparent;
+            color: $darkblack;
+            font-size: $font-sm;
+            border: 2px solid $blue;
+
+            display: flex;
+            margin-left: 5rem;
+            margin-top: 1rem;
+            margin-bottom: 5rem;
+        }
+    }
+}
