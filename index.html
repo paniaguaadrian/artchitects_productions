@@ -4,16 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Artchitects Productions - Home</title>
+    <title>Desatemos tu potencial</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="app/scss/style.css">
 
     <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap&family=Varela+Round&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
     <!-- Fontawesome -->
@@ -22,273 +20,99 @@
 
 <body>
 
-    <header class="header">
-        <div class="overlay has-fade"></div>
+    <!-- TODO Section 1 Landing Page (Header) -->
 
-        <nav class="container container--px container--py flex flex-jc-sb flex-ai-c">
-            <a href="#" class="header__logo">
-                <p>ARTCHITECTS</p>
-            </a>
-
-            <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-
-            <div class="header__links hide-for-mobile">
-                <!-- home, about, services, packs -->
-                <a href="#">Home</a>
-                <a href="#">Servicios</a>
-                <a href="#we_section">¿Quiénes somos?</a>
-                <a href="#">Packs</a>
+    <header class="container container--px container--py flex flex-jc-sb flex-ai-c">
+        <nav class="navbar container--px container--py flex flex-jc-sb flex-ai-c">
+            <div class="navbar__logo">
+                <img class="logo" src="images/artchitecs_logo_white.png" alt="artchitecs_logo_white">
             </div>
-
-            <div class="header__socials hide-for-mobile">
-                <!-- facebook, twitter, youtube -->
-                <a class="flex-jc-sb flex-ai-c" href="https://www.facebook.com" target="_blank">
-                    <i class="fab fab-icon fa-facebook-f"></i>
-                </a>
-
-                <a class="flex-jc-sb flex-ai-c" href="https://www.facebook.com" target="_blank">
-                    <i class="fab fab-icon fa-youtube"></i>
-                </a>
-
-                <a class="flex-jc-sb flex-ai-c" href="https://www.facebook.com" target="_blank">
-                    <i class="fab fab-icon fa-twitter"></i>
-                </a>
+            <div class="navbar__links flex-jc-sb hide-for-mobile flex">
+                <a href="#">Home</a>
+                <a href="#">¿Quiénes somos?</a>
+                <a href="#">Pricing</a>
 
             </div>
         </nav>
 
-        <div class="header__menu has-fade hide-for-desktop">
-            <a href="#">Home</a>
-            <a href="#">Servicios</a>
-            <a href="#">¿Quiénes somos?</a>
-            <a href="#">Packs</a>
-            <div class="socials-mobile flex flex-dir-r flex-jc-c flex-ai-c">
-                <a href="https://www.facebook.com" target="_blank">
-                    <i class="fab fab-icon fa-facebook-f"></i>
-                </a>
 
-                <a ref="https://www.facebook.com" target="_blank">
-                    <i class="fab fab-icon fa-youtube"></i>
-                </a>
+        <section class="hero flex flex-jc-sb">
+            <div class="hero__logo">
+                <img src="images/header_image.png" alt="header__image">
+            </div>
+            <div class="container__left">
 
-                <a href="https://www.facebook.com" target="_blank">
-                    <i class="fab fab-icon fa-twitter"></i>
-                </a>
+            </div>
+            <div class="container__right container--pall">
+                <h3>
+                    Construye tu música
+                </h3>
+                <h1>Desatemos<br> tu potencial</h1> 
+                <p>
+                    Sabemos que los artistas cada vez gozan de menos apoyo para mostrar al mundo su talento y sus
+                    capacidades.
+                </p>
+                <p>Artchitects ha nacido para acompañarte en tu camino y que nunca más sientas la imposibilidad de
+                    lograr tus objetivos.
+                </p>
+                <p> <span>Hagamos tus proyectos realidad.</span> ¿Empezamos?
+
+                </p>
+
+
+
             </div>
 
-        </div>
+
+        </section>
+
     </header>
 
-
-    <section class="hero container container--py">
-        <div class="hero__image"></div>
-
-        <div class="hero__text container--pall">
-            <h1>La discográfica diferente al resto</h1>
-            <hr class="hide-for-desktop">
-            <p>La manera en la que consumimos Arte, ha cambiado por completo
-                con las nuevas generaciones, los artistas cada vez gozan de menos
-                apoyo para demostrar al mundo su talento y capacidades.
-            </p>
-            <p>Artchitects ha nacido para ser tu luz en el camino y que nunca más
-                sientas la imposibilidad de lograr tus objetivos.</p>
-
-
-            <button type=button href="#service" class="button hero__button"
-                onClick="document.getElementById('service').scrollIntoView();">Empieza tu carrera</button>
-
-
-
-        </div>
-    </section>
-
-
-    <section id="service" class="services container container--pall">
-
-        <div class="services__header container container--pall">
-            <h2>¡Crece con nosotros!</h2>
-            <p>Artchitects Productions nace con un objetivo muy claro: el acompañamiento profesionalizado de artistas.
-            </p>
-        </div>
-
-
-        <div class="services__grid container container--pall">
-
-            <div class="services__item">
-                <div class="services__icon">
-                    <img src="images/coaching_image.svg" alt="coaching image">
-                </div>
-                <div class="services__title">
-                    <h3>Coaching</h3>
-                </div>
-                <div class="services__description">
-                    <p>Sabemos que para llegar a ser un gran artista no solo basta con el talento, nos preocupamos en
-                        desarrollar al máximo tus habilidades como músico, convierte tu instrumento en una
-                        extensión de ti.</p>
-                </div>
-            </div>
-
-            <div class="services__item">
-                <div class="services__icon">
-                    <img src="images/composicion_image.svg" alt="coaching image">
-                </div>
-                <div class="services__title">
-                    <h3>Composición</h3>
-                </div>
-                <div class="services__description">
-                    <p>Artchitects rompe la barrera de tu mente, y abre paso a la inspiración, creamos para ti las
-                        canciones con las que siempre has soñado, le damos vida a tus emociones.</p>
-                </div>
-            </div>
-
-            <div class="services__item">
-                <div class="services__icon">
-                    <img src="images/estudio_image.svg" alt="coaching image">
-                </div>
-                <div class="services__title">
-                    <h3>El Estudio</h3>
-                </div>
-                <div class="services__description">
-                    <p>Lleva tus proyectos al siguiente nivel. Produce, mezcla y masteriza tus canciones recibiendo
-                        nuestro
-                        apoyo durante todo el proceso. </p>
-                </div>
-            </div>
-
-            <div class="services__item">
-                <div class="services__icon">
-                    <img src="images/identidad_image.svg" width=100px alt="coaching image">
-                </div>
-                <div class="services__title">
-                    <h3>Identidad Artística</h3>
-                </div>
-                <div class="services__description">
-                    <p>Desde Artchitects trabajamos para construir tu identidad como artista, potenciamos tu confianza
-                        escénica y cultivamos tu carisma para crear tu marca personal.
-                    </p>
-
-                </div>
-            </div>
-        </div>
-
-        <button type=button href="#" class="button hero__button">Todos los servicios</button>
-
-    </section>
-
-
-    <section class="we container container--pall" id="we_section">
-        <!-- Quienes somos intro -->
-        <div class="we__header container container--pall">
-            <h2>Descúbre con quien trabajarás</h2>
-            <p>Artchitects está conformado por profesionales del sector con mucha experiencia a sus espaldas.
-            </p>
-        </div>
-
-        <!-- Quienes somos desktop -->
-        <div class="cards__container hide-for-mobile">
-            <div class="cards__item hide-for-mobile">
-                <h5 class="cards__title">Pau Saez<br><span>CEO, Productor Musical e<br> Ingeniero de
-                        mezcla.</span></h5>
-                <img class="cards__image" src="images/adrian__image.JPG" alt="dog-profile" />
-                <p class="cards__description">
-                    Músico y productor, amante del arte de calidad, refuerzo positivo y cercanía como filosofía
-                    de trabajo.
-                </p>
-            </div>
-
-            <div class="cards__item hide-for-mobile">
-                <h5 class="cards__title">Daniel Mendikoa<br><span>CEO, Coach vocal, musical y <br>Productor y
-                        Gestor
-                        Cultural.</span></h5>
-                <img class="cards__image" src="images/adrian__image.JPG" alt="dog-profile" />
-                <p class="cards__description">
-                    Cantante lírico y Pianista, Productor y Gestor Cultural. El aprendizaje no acaba nunca,
-                    siempre se puede aprender más.
-                </p>
-            </div>
-
-            <div class="cards__item hide-for-mobile">
-                <h5 class="cards__title">Yrene Monroe<br><Span>Directora de artes escénicas <br>e identidad
-                        artística.</span></h5>
-                <img class="cards__image" src="images/adrian__image.JPG" alt="dog-profile" />
-                <p class="cards__description">
-                    Actriz y coreógrafa, especializada en trabajar la autoestima, la autoconfianza, y la
-                    cohesión grupal. Trabajemos en tu esencia, desarrollemos tu identidad, esa será tu huella.
-                </p>
-            </div>
-        </div>
-        <div class="button-container hide-for-mobile">
-            <button type=button href="#" class="button hero__button">Ver más colaboradores</button>
-        </div>
-
-        <!-- Quienes somos mobile -->
-        <div class="colored-section hide-for-desktop" id="we">
-            <div id="testimonial-carousel" class="carousel slide" data-ride="false">
-                <div class="carousel-inner carousel__container">
-                    <div class="carousel-item active container-fluid">
-
-                        <h5 class="carousel__title">Pau Saez<br><span>CEO, Productor Musical e<br> Ingeniero de
-                                mezcla.</span></h5>
-                        <img class="testimonial-image carousel__image" src="images/adrian__image.JPG"
-                            alt="dog-profile" />
-                        <p class="testimonial-text carousel__description">
-                            Músico y productor, amante del arte de calidad, refuerzo positivo y cercanía como filosofía
-                            de trabajo.
-                        </p>
-
-                    </div>
-                    <div class="carousel-item container-fluid">
-                        <h5 class="carousel__title">Daniel Mendikoa<br><span>CEO, Coach vocal, musical y <br>Productor y
-                                Gestor
-                                Cultural.</span>
-                        </h5>
-                        <img class="testimonial-image carousel__image" src="images/adrian__image.JPG"
-                            alt="dog-profile" />
-                        <p class="testimonial-text carousel__description">
-                            Cantante lírico y Pianista, Productor y Gestor Cultural. <br>El aprendizaje no acaba nunca,
-                            siempre se puede aprender más.
-                        </p>
-                    </div>
-
-                    <div class="carousel-item container-fluid">
-                        <h5 class="carousel__title">Yrene Monroe<br><Span>Directora de artes escénicas <br>e identidad
-                                artística.</Span>
-                        </h5>
-                        <img class="testimonial-image carousel__image" src="images/adrian__image.JPG"
-                            alt="dog-profile" />
-                        <p class="testimonial-text carousel__description">
-                            Actriz y coreógrafa, especializada en trabajar la autoestima, la autoconfianza, y la
-                            cohesión grupal. Trabajemos en tu esencia, desarrollemos tu identidad, esa será tu huella.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="button-container hide-for-desktop">
-                    <button type=button href="#" class="button hero__button">Ver más colaboradores</button>
-                </div>
-
-                <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-
-    <div class="packs container container--pall">
-
+    <div class="container_split">
 
     </div>
 
-    <div class="form-container container container--pall">
+    <!-- TODO Section 2 Landing Page (Services) -->
+    <div class="container">
+
+    </div>
+    <!-- ! Service images
+    <div>
+        <img class="imagetest" src="/images/service_estudio_image.svg" alt="" srcset="">
+        <img class="imagetest" src="/images/service_imagen_image.svg" alt="" srcset="">
+        <img class="imagetest" src="/images/service_coaching_image.svg" alt="" srcset="">
+        <img class="imagetest" src="/images/service_management_image.svg" alt="" srcset="">
+        <img class="imagetest" src="/images/service_composicion_image.svg" alt="" srcset="">
+        <img class="imagetest" src="/images/service_identidad_image.svg" alt="" srcset="">
+    </div> -->
+    <div class="container_split">
+
+    </div>
+    <!-- TODO Section 3 Landing Page (Who we are) -->
+    <div class="container">
+
+    </div>
+
+    <div class="container_split">
+
+    </div>
+
+    <!-- TODO Section 4 Landing Page (Our Projects) -->
+
+    <!-- TODO Section 5 Landing Page (Newsletter) -->
+
+    <!-- TODO Section 6 Landing Page (Footer) -->
+
+
+
+
+
+
+
+
+
+    <!-- * Contact form -->
+    <!-- <div class="form-container container container--pall">
         <form class="contact-form" action="contactform.php" method="post">
 
 
@@ -303,30 +127,9 @@
             <input type="submit" name="submit" value="Contactar">
 
         </form>
-    </div>
+    </div> -->
 
 
-
-
-
-
-
-
-
-
-
-
-    <!-- bootstrap Scripts -->
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
 
     <!-- Script -->
     <script src="app/js/script.js"></script>
