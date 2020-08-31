@@ -22,32 +22,45 @@
 
     <!-- TODO Section 1 Landing Page (Header) -->
 
-    <header class="container container--px container--py flex flex-jc-sb flex-ai-c">
+    <header class="header container container--px container--py flex flex-jc-sb flex-ai-c">
         <nav class="navbar container--px container--py flex flex-jc-sb flex-ai-c">
             <div class="navbar__logo">
-                <img class="logo" src="images/artchitecs_logo_white.png" alt="artchitecs_logo_white">
+                <a href="index.html">
+                    <img class="logo" src="images/artchitecs_logo_white.png" alt="artchitecs_logo_white">
+                </a>
             </div>
-            <div class="navbar__links flex-jc-sb hide-for-mobile flex">
-                <a href="#">Home</a>
-                <a href="#">¿Quiénes somos?</a>
-                <a href="#">Pricing</a>
+            <div class="navbar__links flex flex-jc-sb hide-for-mobile">
+                <a href="index.html">Home</a>
+                <a href="historia.html">¿Quiénes somos?</a>
+                <a href="#service">Servicios</a>
+                <a href="pricing.html">Pricing</a>
 
             </div>
         </nav>
 
 
-        <section class="hero flex flex-jc-sb">
-            <div class="hero__logo">
-                <img src="images/header_image.png" alt="header__image">
-            </div>
-            <div class="container__left">
+        <section class="hero flex container--pall">
+
+            <div class="hero__left flex">
+                <div class="hero__media flex">
+                    <i class="fab fab-icon fa-facebook-f"></i>
+                    <i class="fab fab-icon fa-youtube"></i>
+                    <i class="fab fab-icon fa-twitter"></i>
+                    <img src="images/music_front.png" alt="music_notes">
+                </div>
 
             </div>
-            <div class="container__right container--pall">
+            <div class="hero__center">
+                <div class="hero__image">
+                    <img src="images/header_image.png" alt="hero__image">
+                </div>
+
+            </div>
+            <div class="hero__right container--pall">
                 <h3>
                     Construye tu música
                 </h3>
-                <h1>Desatemos<br> tu potencial</h1> 
+                <h1>Desatemos<br> tu potencial</h1>
                 <p>
                     Sabemos que los artistas cada vez gozan de menos apoyo para mostrar al mundo su talento y sus
                     capacidades.
@@ -55,63 +68,282 @@
                 <p>Artchitects ha nacido para acompañarte en tu camino y que nunca más sientas la imposibilidad de
                     lograr tus objetivos.
                 </p>
-                <p> <span>Hagamos tus proyectos realidad.</span> ¿Empezamos?
+                <p> <span>Hagamos tus proyectos realidad.</span>
 
                 </p>
 
+                <button type=button href="#service" class="button hero__button"
+                    onClick="document.getElementById('service').scrollIntoView();">Empieza tu carrera</button>
 
+                <button type=button href="#" class="button hero_button">Hablemos de tu proyecto</button>
+                <!-- ESTE BOTON ABRE EL FORMULARIO DE CONTACTO -->
 
             </div>
-
-
         </section>
-
     </header>
 
-    <div class="container_split">
 
-    </div>
 
     <!-- TODO Section 2 Landing Page (Services) -->
-    <div class="container">
-
+    <div id="service" class="container_split">
+        <h1 class="split__title">¡Crece con nosotros!</h1>
+        <p class="split__text">Artchitects Productions nace con un objetivo muy claro:
+            <span><br>el acompañamiento profesionalizado de artistas</span>
+        </p>
     </div>
-    <!-- ! Service images
-    <div>
-        <img class="imagetest" src="/images/service_estudio_image.svg" alt="" srcset="">
-        <img class="imagetest" src="/images/service_imagen_image.svg" alt="" srcset="">
-        <img class="imagetest" src="/images/service_coaching_image.svg" alt="" srcset="">
-        <img class="imagetest" src="/images/service_management_image.svg" alt="" srcset="">
-        <img class="imagetest" src="/images/service_composicion_image.svg" alt="" srcset="">
-        <img class="imagetest" src="/images/service_identidad_image.svg" alt="" srcset="">
-    </div> -->
-    <div class="container_split">
 
-    </div>
+    <section class="services container container_services container--pall">
+        <div class="services__header">
+            <div class="first__half">
+                <hr size="3">
+            </div>
+            <div>
+                <h1>Nuestros servicios</h1>
+            </div>
+            <div class="second__half">
+                <hr size="3">
+            </div>
+
+        </div>
+        <div class="services__container flex">
+            <div class="services__top flex">
+
+                <div class="services__item">
+                    <div class="services__icon">
+                        <img src="/images/service_coaching_image.svg" alt="coaching_image" srcset="">
+                    </div>
+                    <div class="services__title">
+                        <h3>Coaching</h3>
+                    </div>
+                    <div class="services__description">
+                        <p>Sabemos que para llegar a ser un gran artista no solo basta con el talento, por eso
+                            Artchitects
+                            se preocupa de desarrollar al máximo tus habilidades como músico, convierte tu instrumento
+                            en
+                            una extensión de ti, encuentra tu propia voz.</p>
+                    </div>
+                </div>
+
+                <div class="services__item composicion__item">
+                    <div class="services__icon">
+                        <img src="/images/service_composicion_image.svg" alt="composicion_image" srcset="">
+                    </div>
+                    <div class="services__title">
+                        <h3>Composición</h3>
+                    </div>
+                    <div class="services__description">
+                        <p>Artchitects rompe la barrera de tu mente, y abre paso a la inspiración, creamos para ti las
+                            canciones con las que siempre has soñado, le damos vida a tus emociones.</p>
+                    </div>
+                </div>
+
+                <div class="services__item">
+                    <div class="services__icon">
+                        <img src="/images/service_estudio_image.svg" alt="estudio_image" srcset="">
+                    </div>
+                    <div class="services__title">
+                        <h3>El Estudio</h3>
+                    </div>
+                    <div class="services__description">
+                        <p>Lleva tus proyectos al siguiente nivel. Produce, mezcla y masteriza tus canciones recibiendo
+                            nuestro apoyo durante todo el proceso. Te ayudamos a que tus creaciones brillen como se
+                            merecen
+                            ofreciendo una visión innovadora, buscando sin descanso el sonido que quieras lograr.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="services__bottom flex">
+                <div class="services__item">
+                    <div class="services__icon">
+                        <img src="/images/service_identidad_image.svg" alt="identidad_image" srcset="">
+                    </div>
+                    <div class="services__title">
+                        <h3>Identidad Artística</h3>
+                    </div>
+                    <div class="services__description">
+                        <p>Desde Artchitects trabajamos para construir tu identidad como artista, potenciamos tu
+                            confianza
+                            escénica y cultivamos tu carisma para crear tu marca personal.</p>
+                    </div>
+                </div>
+
+                <div class="services__item">
+                    <div class="services__icon">
+                        <img src="/images/service_imagen_image.svg" alt="imagen_image" srcset="">
+                    </div>
+                    <div class="services__title">
+                        <h3>Imagen digital</h3>
+                    </div>
+                    <div class="services__description">
+                        <p>Expande tu público, muéstrate al mundo. Desarrolla un contenido digital lógico, muestra lo
+                            mejor
+                            de ti de una manera atractiva.</p>
+                    </div>
+                </div>
+
+                <div class="services__item">
+                    <div class="services__icon">
+                        <img src="/images/service_management_image.svg" alt="management_image" srcset="">
+                    </div>
+                    <div class="services__title">
+                        <h3>Management</h3>
+                    </div>
+                    <div class="services__description">
+                        <p>No permitas que tu talento quede en un segundo plano, dale al mundo el placer de conocerte.
+                            Artchitects se encarga de proporcionarte todo lo necesario para darle el último empujón a tu
+                            carrera.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button__container">
+            <a href="pricing.html">
+                <button type=button href="pricing.html" class="button">Nuestras tarifas</button>
+            </a>
+        </div>
+
+        <!-- ESTE BOTON NOS LLEVA A LA PRICING PAGE -->
+    </section>
+
+
     <!-- TODO Section 3 Landing Page (Who we are) -->
-    <div class="container">
-
-    </div>
-
     <div class="container_split">
-
+        <h1 class="split__title">Conoce con quien trabajarás
+        </h1>
+        <p class="split__text">Artchitects está conformado por profesionales del<br>
+            sector con mucha experiencia a sus espaldas.</p>
     </div>
+
+    <section class="we container container__we container--pall">
+        <div class="we__container flex">
+            <div class="we__item">
+                <img class="we__image" src="images/dani_profile_desktop.jpg" alt="dani-profile" />
+                <h5 class="we__title">Daniel Mendikoa<br><span>CEO, Coach vocal, musical y <br>Productor y
+                        Gestor
+                        Cultural.</span></h5>
+                <p class="we__description">
+                    Cantante lírico y pianista, Productor y Gestor Cultural. El aprendizaje no acaba nunca, siempre se
+                    puede
+                    aprender más.
+                </p>
+            </div>
+
+            <div class="we__item">
+                <img class="we__image" src="images/dani_profile_desktop.jpg" alt="pau-profile" />
+                <h5 class="we__title">Pau Saez<br><span>CEO, Productor Musical e<br> Ingeniero de
+                        mezcla.</span></h5>
+                <p class="we__description">
+                    Músico y productor, amante del arte de calidad, refuerzo positivo y cercanía como filosofía de
+                    trabajo.
+                </p>
+            </div>
+
+            <div class="we__item">
+                <img class="we__image" src="images/dani_profile_desktop.jpg" alt="yrene-profile" />
+                <h5 class="we__title">Yrene Monroe<br><Span>Directora de artes escénicas <br>e identidad
+                        artística.</span></h5>
+                <p class="we__description">
+                    Actriz y coreógrafa, especializada en trabajar la autoestima, la autoconfianza, y la cohesión
+                    grupal.
+                    Trabajemos en tu esencia, desarrollemos tu identidad, esa será tu huella.
+
+                </p>
+            </div>
+        </div>
+        <div class="button_container">
+            <a href="historia.html">
+                <button type=button class="button">¿Por qué
+                    Artchitects?</button>
+            </a>
+            <!-- ESTE BOTON NOS LLEVA A LA PAGINA DE HISTORIA DE ARTCHITECTS -->
+            <button type=button href="#" class="button">Hablemos de tu proyecto</button>
+            <!-- ESTE BOTON ABRE EL FORMULARIO DE CONTACTO -->
+
+        </div>
+    </section>
+
+
 
     <!-- TODO Section 4 Landing Page (Our Projects) -->
+    <div class="container_split">
+        <h1 class="split__title">Nuestros trabajos más recientes</h1>
+        <p class="split__text">Todos nuestros últimos proyectos con grupos de toda España</p>
+
+    </div>
+
+    <section class="projects container flex container__projects container--pall">
+        <div class="projects__header container--pall container--">
+            <h1 class="projects__title">
+                El proyecto X
+            </h1>
+            <p class="projects__text">En este proyecto tenemos mezcladas x canciones de esta manera porque mola y porque
+                somos los mejores, fin tete! que passsaa</p>
+        </div>
+        <div class="projects__soundcloud container--pall">
+            <iframe width="50%" height="200" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/207164901&color=%230066cc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <div
+                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                <a href="https://soundcloud.com/pau-saez-lopez" title="Pau saez lopez" target="_blank"
+                    style="color: #cccccc; text-decoration: none;">Pau saez lopez</a> · <a
+                    href="https://soundcloud.com/pau-saez-lopez/bad-blood-cover-test" title="bad blood cover test"
+                    target="_blank" style="color: #cccccc; text-decoration: none;">bad blood cover test</a></div>
+        </div>
+        <div class="button_container">
+            <a href="pricing.html">
+                <button type=button href="#" class="button__projects">Explora todas nuestras posibilidades</button>
+            </a>
+        </div>
+
+
+        <!-- ESTE BOTON ABRE LA PRICING PAGE -->
+    </section>
 
     <!-- TODO Section 5 Landing Page (Newsletter) -->
-
+    <section class="newsletter container_split">
+        <h1 class="split__title">¡Suscríbete a nuestra newsletter!</h1>
+        <p class="split__text">¡No te pierdas nuestras noticias y novedades! <br>Mantente informado de todo lo que
+            ocurre en
+            Artchitects!</p>
+        <!-- ! FORM PARA ENVIAR EL MAIL A UN EXCEL SI ES POSIBLE -->
+    </section>
     <!-- TODO Section 6 Landing Page (Footer) -->
 
+    <section class="footer">
+        <div class="footer__header">
+            <div class="footer__logo">
+                <img class="logo" src="images/artchitecs_logo_white.png" alt="artchitecs_logo_white">
+            </div>
+            <div class="footer__email">
+                <h1>
+                    info@artchitectsproductions.com
+                </h1>
+            </div>
+
+            <div class="footer__telf">
+                <h2>+34 610060069</h2>
+            </div>
+
+            <div class="footer__loca">
+                <h2>Barcelona, España. 08020</h2>
+            </div>
+        </div>
+
+        <div class="footer__links">
+            <a href="#">Home</a>
+            <a href="#">Servicios</a>
+            <a href="#">¿Quiénes somos?</a>
+            <a href="#">Pricing</a>
+        </div>
+
+    </section>
 
 
 
 
+    <!-- TODO Section 7 Landing Page (Contact form) IN A POP UP FROM A BUTTON-->
 
-
-
-
-    <!-- * Contact form -->
     <!-- <div class="form-container container container--pall">
         <form class="contact-form" action="contactform.php" method="post">
 

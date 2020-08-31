@@ -1,95 +1,48 @@
-.container {
-    background: rgb(91, 28, 248);
-    background: linear-gradient(140deg, rgba(91, 28, 248, 1) 35%, rgba(165, 44, 212, 1) 75%);
-
-}
-
-.navbar {
-    position: absolute;
-    top: 10px;
-    width: 98%;
+header {
+    .navbar {
+        position: absolute;
+        top: 10px;
+        width: 98%;
 
 
 
-    &__logo {
-        width: 25rem;
+        &__logo {
+            width: 25rem;
 
-    }
+        }
 
-    &__links {
-        a {
-            position: relative;
-            margin-right: 10rem;
-            font-family: $body-font;
-            font-size: $font-sm;
-            color: $white;
+        &__links {
+            a {
+                position: relative;
+                margin-right: 8rem;
+                padding-right: 3rem;
+                font-family: $body-font;
+                font-size: $font-sm;
+                color: $white;
 
-            transition: color 300ms ease-in-out;
+                transition: color 300ms ease-in-out;
 
-            &::before {
-                content: "";
-                display: block;
-                position: absolute;
-                height: 2px;
-                background: $white;
-                opacity: 0;
-                left: 0;
-                right: 0;
-                bottom: -1.3rem;
-                transition: opacity 300ms ease-in-out;
-            }
-
-            &:hover {
                 &::before {
-                    opacity: 1;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    height: 2px;
+                    background: $white;
+                    opacity: 0;
+                    left: 0;
+                    right: 45px;
+                    bottom: -1.3rem;
+                    transition: opacity 300ms ease-in-out;
+                }
+
+                &:hover {
+                    &::before {
+                        opacity: 1;
+                    }
                 }
             }
         }
     }
+
 }
 
-.hero {
-
-
-    .container__right {
-        text-align: left;
-        margin-top: 3.5rem;
-        padding-left: 5rem;
-
-
-        h3 {
-            font-family: $front-font;
-            font-size: $font-lg;
-            font-weight: 100;
-            letter-spacing: 3px;
-            margin-bottom: 0;
-        }
-
-        h1 {
-            width: 100%;
-            font-family: $front-font;
-            font-size: $font-exlg;
-            text-transform: uppercase;
-        }
-
-        p {
-            font-family: $front-font;
-            font-size: $font-sm;
-            font-weight: 100;
-            margin-right: 10rem;
-            margin-bottom: 2rem;
-
-            span {
-                font-weight: 600;
-            }
-
-        }
-
-    }
-
-    .hero__logo {
-        img {
-            width: 50rem;
-        }
-    }
-}

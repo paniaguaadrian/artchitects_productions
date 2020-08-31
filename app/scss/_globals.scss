@@ -67,10 +67,39 @@ ul {
   margin: 0 auto;
   background-color: #FCFCFC;
   color: $black;
+
+  align-items: center;
+  text-align: center;
+
+
+  .split__title {
+    font-family: $body-font;
+    font-size: $font-lg;
+    font-weight: 500;
+
+    padding-top: 2rem;
+  }
+
+  .split__text {
+    font-family: $body-font;
+    font-size: $font-med;
+    font-weight: 300;
+
+    padding-top: 1rem;
+  }
+
+  span {
+    font-family: $body-font;
+    font-size: $font-med;
+    font-weight: 500;
+
+    padding-top: 1rem;
+  }
 }
 
 .container {
-
+  background: rgb(91, 28, 248);
+  background: linear-gradient(130deg, rgba(70, 49, 239, 1) 10%, rgba(132, 30, 255, 1) 40%, rgba(176, 65, 193, 1) 85%);
   max-width: 120rem;
   height: 100%;
   width: 100%;
