@@ -22,9 +22,10 @@
         height: 100%;
 
 
+
         img {
-            width: 45rem;
-            padding-right: 5rem;
+            width: 35rem;
+
 
         }
     }
@@ -33,18 +34,18 @@
         text-align: left;
         flex: 3;
 
+
         h3 {
             font-family: $front-font;
-            font-size: $font-lg;
+            font-size: $font-med;
             font-weight: 100;
             letter-spacing: 3px;
             margin-bottom: 0;
         }
 
         h1 {
-            width: 100%;
             font-family: $front-font;
-            font-size: $font-exlg;
+            font-size: $font-lg;
             text-transform: uppercase;
         }
 
@@ -52,7 +53,7 @@
             font-family: $front-font;
             font-size: $font-sm;
             font-weight: 100;
-            margin-right: 18rem;
+            padding-right: 4rem;
             margin-bottom: 2rem;
 
             span {
@@ -73,10 +74,10 @@
         border-radius: 50px;
         border: 0;
         width: 14rem;
-        height: 2.7rem;
+        height: 3rem;
 
-        margin-right: 3rem;
-        margin-top: 3rem;
+        margin-right: 2rem;
+        margin-top: 4rem;
 
         -webkit-box-shadow: -8px -7px 17px -7px #ffffff8c,
 

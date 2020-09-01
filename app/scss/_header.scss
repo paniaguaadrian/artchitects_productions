@@ -9,13 +9,16 @@ header {
         &__logo {
             width: 25rem;
 
+            img {
+                width: 20rem;
+            }
         }
 
         &__links {
             a {
                 position: relative;
-                margin-right: 8rem;
-                padding-right: 3rem;
+                margin-right: 3rem;
+                padding-right: 2rem;
                 font-family: $body-font;
                 font-size: $font-sm;
                 color: $white;
@@ -30,7 +33,7 @@ header {
                     background: $white;
                     opacity: 0;
                     left: 0;
-                    right: 45px;
+                    right: 30px;
                     bottom: -1.3rem;
                     transition: opacity 300ms ease-in-out;
                 }
@@ -45,4 +48,3 @@ header {
     }
 
 }
-

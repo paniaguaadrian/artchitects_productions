@@ -16,7 +16,7 @@
             font-size: $font-bsm;
             font-weight: bold;
             text-align: center;
-            margin: 5rem 10rem;
+            margin: 5rem 5rem;
 
         }
 
@@ -42,13 +42,11 @@
 
     &__top {
         margin: 3rem 5rem 0 5rem;
-
         flex-direction: row;
     }
 
     &__bottom {
         margin: 3rem 5rem 0 5rem;
-
         flex-direction: row;
     }
 
@@ -70,6 +68,7 @@
         font-family: $body-font;
         font-size: $font-sm;
         font-weight: bold;
+        padding-top: 2rem;
     }
 
     &__description {
@@ -79,13 +78,13 @@
         text-align: center;
 
         p {
-            margin: 0 6rem 2rem 6rem;
+            margin: 1rem 6rem 2rem 6rem;
         }
     }
 
     .button__container {
         text-align: center;
-        padding: 3rem 0 3rem 0;
+        padding-top: 1rem;
     }
 
     .button {

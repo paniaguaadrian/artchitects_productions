@@ -118,6 +118,7 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 
 a,
@@ -133,7 +134,7 @@ ul {
 }
 
 .container_split {
-  max-width: 120rem;
+  max-width: 100%;
   height: 280px;
   width: 100%;
   margin: 0 auto;
@@ -156,20 +157,18 @@ ul {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 300;
-  padding-top: 1rem;
 }
 
 .container_split span {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 500;
-  padding-top: 1rem;
 }
 
 .container {
   background: #5b1cf8;
   background: linear-gradient(130deg, #4631ef 10%, #841eff 40%, #b041c1 85%);
-  max-width: 120rem;
+  max-width: 100%;
   height: 100%;
   width: 100%;
   margin: 0 auto;
@@ -268,10 +267,14 @@ header .navbar__logo {
   width: 25rem;
 }
 
+header .navbar__logo img {
+  width: 20rem;
+}
+
 header .navbar__links a {
   position: relative;
-  margin-right: 8rem;
-  padding-right: 3rem;
+  margin-right: 3rem;
+  padding-right: 2rem;
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
   color: white;
@@ -287,7 +290,7 @@ header .navbar__links a::before {
   background: white;
   opacity: 0;
   left: 0;
-  right: 45px;
+  right: 30px;
   bottom: -1.3rem;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
@@ -327,8 +330,7 @@ header .navbar__links a:hover::before {
 }
 
 .hero__center img {
-  width: 45rem;
-  padding-right: 5rem;
+  width: 35rem;
 }
 
 .hero__right {
@@ -340,16 +342,15 @@ header .navbar__links a:hover::before {
 
 .hero__right h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 100;
   letter-spacing: 3px;
   margin-bottom: 0;
 }
 
 .hero__right h1 {
-  width: 100%;
   font-family: "Open Sans", sans-serif;
-  font-size: 6rem;
+  font-size: 4rem;
   text-transform: uppercase;
 }
 
@@ -357,7 +358,7 @@ header .navbar__links a:hover::before {
   font-family: "Open Sans", sans-serif;
   font-size: 1.3rem;
   font-weight: 100;
-  margin-right: 18rem;
+  padding-right: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -373,9 +374,9 @@ header .navbar__links a:hover::before {
   border-radius: 50px;
   border: 0;
   width: 14rem;
-  height: 2.7rem;
-  margin-right: 3rem;
-  margin-top: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
+  margin-top: 4rem;
   -webkit-box-shadow: -8px -7px 17px -7px #ffffff8c,  10px 9px 17px -5px #00000091;
   box-shadow: -8px -7px 17px -7px #ffffff8c, 10px 9px 17px -5px #00000091;
 }
@@ -403,7 +404,7 @@ header .navbar__links a:hover::before {
   font-size: 1.7rem;
   font-weight: bold;
   text-align: center;
-  margin: 5rem 10rem;
+  margin: 5rem 5rem;
 }
 
 .services .first__half {
@@ -471,6 +472,7 @@ header .navbar__links a:hover::before {
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
+  padding-top: 2rem;
 }
 
 .services__description {
@@ -481,12 +483,12 @@ header .navbar__links a:hover::before {
 }
 
 .services__description p {
-  margin: 0 6rem 2rem 6rem;
+  margin: 1rem 6rem 2rem 6rem;
 }
 
 .services .button__container {
   text-align: center;
-  padding: 3rem 0 3rem 0;
+  padding-top: 1rem;
 }
 
 .services .button {
@@ -536,6 +538,7 @@ header .navbar__links a:hover::before {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 600;
+  padding-top: 2rem;
   line-height: 1.7rem;
 }
 
@@ -549,7 +552,7 @@ header .navbar__links a:hover::before {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  margin: 0 4rem;
+  margin: 1rem 4rem;
 }
 
 .we .button_container {
@@ -565,7 +568,7 @@ header .navbar__links a:hover::before {
   border-radius: 50px;
   border: none;
   width: 14rem;
-  height: 2.7rem;
+  height: 3rem;
   margin-left: 4rem;
   -webkit-box-shadow: -8px -7px 17px -7px #ffffff8c, 10px 9px 17px -5px #00000091;
   box-shadow: -8px -7px 17px -7px #ffffff8c, 10px 9px 17px -5px #00000091;
@@ -614,9 +617,466 @@ header .navbar__links a:hover::before {
   border-radius: 50px;
   border: none;
   width: 20rem;
-  height: 3rem;
-  margin-left: 4rem;
+  height: 3.5rem;
   -webkit-box-shadow: -8px -7px 17px -7px #ffffff8c, 10px 9px 17px -5px #00000091;
   box-shadow: -8px -7px 17px -7px #ffffff8c, 10px 9px 17px -5px #00000091;
+}
+
+.footer__container {
+  height: 15rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(-40deg, #4631ef 10%, #841eff 40%, #b041c1 85%);
+  color: white;
+}
+
+.footer__logo img {
+  width: 20rem;
+}
+
+.footer__media {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__media a {
+  color: white;
+  text-decoration: none;
+  padding-right: 3rem;
+}
+
+.footer__media a:hover {
+  font-weight: 500;
+}
+
+.footer__top {
+  padding-bottom: 1rem;
+}
+
+.footer__bottom {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: 1px solid white;
+  padding-top: 1rem;
+}
+
+.footer__where h2 {
+  font-size: 1.3rem;
+  text-align: right;
+  font-weight: 100;
+}
+
+.container__pricing {
+  height: 45rem;
+}
+
+.container__pricing .logo {
+  width: 20rem;
+}
+
+.split__pricing {
+  height: 10rem;
+}
+
+.pricing__cta {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10rem;
+}
+
+.pricing__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.pricing__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 100;
+  padding: 0 21rem;
+}
+
+.pricing__text span {
+  font-weight: 700;
+}
+
+.pricing .button_container {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing .button__pricing {
+  text-align: center;
+  color: #6D357B;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  width: 20rem;
+  height: 3.5rem;
+  margin-top: 3rem;
+  -webkit-box-shadow: -8px -7px 17px -7px #ffffff8c, 10px 9px 17px -5px #00000091;
+  box-shadow: -8px -7px 17px -7px #ffffff8c, 10px 9px 17px -5px #00000091;
+}
+
+.container__recomended {
+  height: 140rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(600px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-gap: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .grid {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .grid {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    width: 1140px;
+  }
+}
+
+.mycard {
+  text-align: center;
+  position: relative;
+  border-radius: 15px;
+  padding: 40px 20px;
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+  overflow: hidden;
+}
+
+.mycard:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.basic,
+.basic .title .fa {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+}
+
+.standard,
+.standard .title .fa {
+  background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+
+.premium,
+.premium .title .fa {
+  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+}
+
+.title .fa {
+  color: #fff;
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title h2 {
+  position: relative;
+  margin: 10px 0 0;
+  color: #fff;
+  font-size: 28px;
+  z-index: 2;
+}
+
+.price {
+  position: relative;
+  z-index: 2;
+}
+
+.price h4 {
+  margin: 0;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 60px;
+}
+
+.price h5 {
+  padding: .5rem 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.price span {
+  font-weight: 800;
+}
+
+.card__texts {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.option {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  z-index: 2;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.option ul {
+  margin: 0;
+  padding: 0;
+}
+
+.option ul li {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.mycard a {
+  position: relative;
+  z-index: 2;
+  border-radius: 8px;
+  margin: 30px auto 8px;
+  text-decoration: none;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.explication {
+  text-align: center;
+  font-weight: 300;
+  padding: 0 10rem;
+}
+
+.explication2 {
+  text-align: center;
+  font-weight: 300;
+  padding: 0 5rem;
+}
+
+.allPrices {
+  height: 55rem;
+  color: white;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-container {
+  width: 100%;
+}
+
+#wrapper {
+  width: 100rem;
+  max-width: 100%;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .5em;
+}
+
+.flex-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 1em;
+  width: 0;
+}
+
+.flex-item:last-child {
+  margin-right: 0;
+}
+
+.harga {
+  border: 1px solid #eee;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.harga:hover {
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+}
+
+.harga .harga-judul {
+  background-color: #b041c1;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.harga li {
+  list-style-type: none;
+  border-bottom: 1px solid #eee;
+  padding: 1.2em;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.harga .wira {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) {
+  button {
+    padding: .75em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .flex-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+  .harga:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: none;
+            transform: none;
+  }
+  button {
+    padding: .75em 1.5em;
+  }
+}
+
+.container__historia {
+  height: 70rem;
+}
+
+.logo__ {
+  width: 20rem;
+}
+
+.historia__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10rem;
+}
+
+.historia__1 {
+  text-align: left;
+  padding-right: 38rem;
+  line-height: 1.7rem;
+}
+
+.historia__1 h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.historia__1 p {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.historia__2 {
+  text-align: left;
+  padding-right: 38rem;
+  line-height: 1.7rem;
+}
+
+.historia__2 h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.historia__2 p {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.historia__3 {
+  text-align: left;
+  padding-right: 40rem;
+  line-height: 2rem;
+}
+
+.historia__3 h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.historia__3 p {
+  font-size: 1.3rem;
+  font-weight: 200;
 }
 /*# sourceMappingURL=style.css.map */

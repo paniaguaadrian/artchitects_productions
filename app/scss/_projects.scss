@@ -4,14 +4,13 @@
 
 .projects {
     flex-direction: column;
-
     text-align: center;
 
     &__header {
         display: flex;
         flex-direction: column;
 
-        p {}
+
     }
 
     &__soundcloud {
@@ -37,8 +36,7 @@
     border-radius: 50px;
     border: none;
     width: 20rem;
-    height: 3rem;
-    margin-left: 4rem;
+    height: 3.5rem;
 
     -webkit-box-shadow: -8px -7px 17px -7px #ffffff8c, 10px 9px 17px -5px #00000091;
     box-shadow: -8px -7px 17px -7px #ffffff8c,

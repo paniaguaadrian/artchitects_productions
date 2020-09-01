@@ -32,7 +32,7 @@
         font-family: $body-font;
         font-size: $font-med;
         font-weight: 600;
-
+        padding-top: 2rem;
         line-height: 1.7rem;
 
         span {
@@ -47,7 +47,7 @@
         font-size: $font-vsm;
         font-weight: 400;
 
-        margin: 0 4rem;
+        margin: 1rem 4rem;
     }
 
     .button_container {
@@ -65,7 +65,7 @@
         border-radius: 50px;
         border: none;
         width: 14rem;
-        height: 2.7rem;
+        height: 3rem;
         margin-left: 4rem;
 
         -webkit-box-shadow: -8px -7px 17px -7px #ffffff8c, 10px 9px 17px -5px #00000091;

@@ -1,0 +1,65 @@
+.container__historia {
+    height: 70rem;
+
+}
+
+.logo__ {
+    width: 20rem;
+}
+
+.historia__container {
+    flex-direction: column;
+    padding-top: 10rem;
+}
+
+.historia__1 {
+    text-align: left;
+    padding-right: 38rem;
+    line-height: 1.7rem;
+
+    h1 {
+        font-size: $font-med;
+        font-weight: 600;
+
+    }
+
+    p {
+        font-size: $font-sm;
+        font-weight: 200;
+    }
+
+}
+
+.historia__2 {
+    text-align: left;
+    padding-right: 38rem;
+    line-height: 1.7rem;
+
+    h1 {
+        font-size: $font-med;
+        font-weight: 600;
+
+    }
+
+    p {
+        font-size: $font-sm;
+        font-weight: 200;
+    }
+}
+
+.historia__3 {
+    text-align: left;
+    padding-right: 40rem;
+    line-height: 2rem;
+
+    h1 {
+        font-size: $font-med;
+        font-weight: 600;
+
+    }
+
+    p {
+        font-size: $font-sm;
+        font-weight: 200;
+    }
+}

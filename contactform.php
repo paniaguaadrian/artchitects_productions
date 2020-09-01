@@ -12,3 +12,4 @@ if (isset($_POST['submit'])) {
     mail($mailto, $txt, $message, $headers);
     header("Location: index.html?mailsend");
 }
+
