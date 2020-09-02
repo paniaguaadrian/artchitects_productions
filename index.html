@@ -23,12 +23,23 @@
     <!-- TODO Section 1 Landing Page (Header) -->
 
     <header class="header container container--px container--py flex flex-jc-sb flex-ai-c">
+
+        <div class="overlay has-fade"></div>
+
         <nav class="navbar container--px container--py flex flex-jc-sb flex-ai-c">
             <div class="navbar__logo">
                 <a href="index.html">
                     <img class="logo" src="images/artchitecs_logo_white.png" alt="artchitecs_logo_white">
                 </a>
             </div>
+            <div class="hmb__menu">
+                <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
             <div class="navbar__links flex flex-jc-sb hide-for-mobile">
                 <a href="index.html">Home</a>
                 <a href="historia.html">¿Quiénes somos?</a>
@@ -39,9 +50,30 @@
         </nav>
 
 
+        <div class="header__menu has-fade hide-for-desktop">
+            <a href="index.html">Home</a>
+            <a href="historia.html">¿Quiénes somos?</a>
+            <a href="#service">Servicios</a>
+            <a href="pricing.html">Pricing</a>
+            <div class="socials-mobile flex flex-dir-r flex-jc-c flex-ai-c">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fab-icon fa-facebook-f"></i>
+                </a>
+
+                <a ref="https://www.facebook.com" target="_blank">
+                    <i class="fab fab-icon fa-youtube"></i>
+                </a>
+
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fab-icon fa-twitter"></i>
+                </a>
+            </div>
+
+        </div>
+
         <section class="hero flex container--pall">
 
-            <div class="hero__left flex">
+            <div class="hero__left flex hide-for-mobile">
                 <div class="hero__media flex">
                     <i class="fab fab-icon fa-facebook-f"></i>
                     <i class="fab fab-icon fa-youtube"></i>
@@ -50,7 +82,7 @@
                 </div>
 
             </div>
-            <div class="hero__center">
+            <div class="hero__center hide-for-mobile">
                 <div class="hero__image">
                     <img src="images/header_image.png" alt="hero__image">
                 </div>
@@ -60,7 +92,7 @@
                 <h3>
                     Construye tu música
                 </h3>
-                <h1>Desatemos<br> tu potencial</h1>
+                <h1>Desatemos tu potencial</h1>
                 <p>
                     Sabemos que los artistas cada vez gozan de menos apoyo para mostrar al mundo su talento y sus
                     capacidades.
@@ -71,17 +103,18 @@
                 <p> <span>Hagamos tus proyectos realidad.</span>
 
                 </p>
+                <div class="buttons_container">
+                    <button type=button href="#service" class="button hero__button"
+                        onClick="document.getElementById('service').scrollIntoView();">Empieza tu carrera</button>
 
-                <button type=button href="#service" class="button hero__button"
-                    onClick="document.getElementById('service').scrollIntoView();">Empieza tu carrera</button>
+                    <button type=button href="#" class="button hero_button">Hablemos de tu proyecto</button>
+                    <!-- ESTE BOTON ABRE EL FORMULARIO DE CONTACTO -->
+                </div>
 
-                <button type=button href="#" class="button hero_button">Hablemos de tu proyecto</button>
-                <!-- ESTE BOTON ABRE EL FORMULARIO DE CONTACTO -->
 
             </div>
         </section>
     </header>
-
 
 
     <!-- TODO Section 2 Landing Page (Services) -->
@@ -211,7 +244,7 @@
     <div class="container_split">
         <h1 class="split__title">Conoce con quien trabajarás
         </h1>
-        <p class="split__text">Artchitects está conformado por profesionales del<br>
+        <p class="split__text">Artchitects está conformado por profesionales del
             sector con mucha experiencia a sus espaldas.</p>
     </div>
 
@@ -281,7 +314,7 @@
                 somos los mejores, fin tete! que passsaa</p>
         </div>
         <div class="projects__soundcloud container--pall">
-            <iframe width="50%" height="200" scrolling="no" frameborder="no" allow="autoplay"
+            <iframe class="soundcloud" width="50%" height="200" scrolling="no" frameborder="no" allow="autoplay"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/207164901&color=%230066cc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             <div
                 style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
@@ -303,7 +336,7 @@
     <!-- TODO Section 5 Landing Page (Newsletter) -->
     <section class="newsletter container_split">
         <h1 class="split__title">¡Suscríbete a nuestra newsletter!</h1>
-        <p class="split__text">¡No te pierdas nuestras noticias y novedades! <br>Mantente informado de todo lo que
+        <p class="split__text">¡No te pierdas nuestras noticias y novedades! Mantente informado de todo lo que
             ocurre en
             Artchitects!</p>
     </section>
@@ -314,7 +347,7 @@
     <section class="footer">
         <div class="footer__container flex container--pall">
 
-            <div class="footer__logo">
+            <div class="footer__logo hide-for-mobile">
                 <img class="logo" src="images/artchitecs_logo_white.png" alt="artchitecs_logo_white">
             </div>
 
@@ -336,8 +369,8 @@
                 <h2>
                     info@artchitectsproductions.com
                 </h2>
-                <h2>+34 610060069</h2>
-                <h2>Barcelona, España. 08020</h2>
+                <h2 class="hide-for-mobile">+34 610060069</h2>
+                <h2 class="hide-for-mobile">Barcelona, España. 08020</h2>
             </div>
         </div>
     </section>

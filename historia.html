@@ -21,10 +21,22 @@
 <body>
     <!-- TODO Section 1 Historia Page (Historia) -->
     <header class="header container--px container container__historia container--py flex flex-jc-sb flex-ai-c">
+
+        <div class="overlay has-fade"></div>
+
         <nav class="navbar container--px container--py flex flex-jc-sb flex-ai-c">
-            <a href="index.html">
-                <img class="logo__" src="images/artchitecs_logo_white.png" alt="artchitecs_logo_white">
-            </a>
+            <div class="navbar__logo">
+                <a href="index.html">
+                    <img class="logo" src="images/artchitecs_logo_white.png" alt="artchitecs_logo_white">
+                </a>
+            </div>
+            <div class="hmb__menu">
+                <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
             <div class="navbar__links flex flex-jc-sb hide-for-mobile">
                 <a href="index.html">Home</a>
                 <a href="historia.html">¿Quiénes somos?</a>
@@ -33,6 +45,26 @@
 
             </div>
         </nav>
+        <div class="header__menu has-fade hide-for-desktop">
+            <a href="index.html">Home</a>
+            <a href="historia.html">¿Quiénes somos?</a>
+            <a href="#service">Servicios</a>
+            <a href="pricing.html">Pricing</a>
+            <div class="socials-mobile flex flex-dir-r flex-jc-c flex-ai-c">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fab-icon fa-facebook-f"></i>
+                </a>
+
+                <a ref="https://www.facebook.com" target="_blank">
+                    <i class="fab fab-icon fa-youtube"></i>
+                </a>
+
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fab-icon fa-twitter"></i>
+                </a>
+            </div>
+
+        </div>
         <!-- TODO Section 1 Historia page (historia) -->
         <section class="historia">
             <div class="historia__container  container--pall flex">
@@ -168,7 +200,7 @@
     <!-- TODO Section 2 Historia Page (Newsletter) -->
     <section class="newsletter container_split">
         <h1 class="split__title">¡Suscríbete a nuestra newsletter!</h1>
-        <p class="split__text">¡No te pierdas nuestras noticias y novedades! <br>Mantente informado de todo lo que
+        <p class="split__text">¡No te pierdas nuestras noticias y novedades! Mantente informado de todo lo que
             ocurre en
             Artchitects!</p>
     </section>
@@ -178,7 +210,7 @@
     <section class="footer">
         <div class="footer__container flex container--pall">
 
-            <div class="footer__logo">
+            <div class="footer__logo hide-for-mobile">
                 <img class="logo" src="images/artchitecs_logo_white.png" alt="artchitecs_logo_white">
             </div>
 
@@ -205,6 +237,9 @@
             </div>
         </div>
     </section>
+
+
+    <script src="app/js/script.js"></script>
 </body>
 
 </html>

@@ -3,6 +3,10 @@
     color: white;
     text-align: center;
     align-items: center;
+
+    @include breakpoint-down(small) {
+        height: 175rem;
+    }
 }
 
 .flex-container {
@@ -15,7 +19,18 @@
     min-height: 200px;
     margin: 0 auto;
     padding: 20px;
-    border-radius: 3px
+
+    border-radius: 3px;
+
+    @include breakpoint-down(small) {
+        width: 22rem;
+        max-width: 100%;
+        min-height: 100px;
+        margin: 0 auto;
+        padding: 20px;
+
+        border-radius: 3px;
+    }
 }
 
 .flex-container {

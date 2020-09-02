@@ -1,6 +1,10 @@
 .container__pricing {
     height: 45rem;
 
+    @include breakpoint-down(small) {
+        height: 41rem;
+    }
+
     .logo {
         width: 20rem;
     }
@@ -18,6 +22,10 @@
         flex-direction: column;
         padding-top: 10rem;
 
+        @include breakpoint-down(small) {
+            padding-top: 4rem;
+        }
+
     }
 
     &__title {
@@ -25,6 +33,13 @@
         font-size: $font-lg;
         text-transform: uppercase;
         padding-bottom: 2rem;
+
+        @include breakpoint-down(small) {
+            font-family: $front-font;
+            font-size: $font-bsm;
+            text-transform: uppercase;
+            padding-bottom: 2rem;
+        }
     }
 
     &__text {
@@ -32,6 +47,13 @@
         font-size: $font-bsm;
         font-weight: 100;
         padding: 0 21rem;
+
+        @include breakpoint-down(small) {
+            font-family: $front-font;
+            font-size: $font-vsm;
+            font-weight: 100;
+            padding: 0 0rem;
+        }
 
         span {
             font-weight: 700;
