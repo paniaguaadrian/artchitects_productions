@@ -740,7 +740,7 @@ header .navbar__links a:hover::before {
 }
 
 .container__recomended {
-  height: 140rem;
+  height: 185rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
