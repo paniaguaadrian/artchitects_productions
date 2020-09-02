@@ -1,4 +1,7 @@
 .header {
+    @include breakpoint-down(small) {
+        height: 45rem;
+    }
 
     // Hamburger open styles
     &.open {

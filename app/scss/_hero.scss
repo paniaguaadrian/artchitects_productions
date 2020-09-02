@@ -35,7 +35,7 @@
         flex: 3;
 
         @include breakpoint-down (small) {
-            margin-top: 4rem;
+            margin-top: 1.5rem;
             text-align: left;
             padding: 0 0;
         }
@@ -81,7 +81,7 @@
 
             @include breakpoint-down (small) {
                 font-family: $front-font;
-                font-size: $font-sm;
+                font-size: $font-vsm;
                 font-weight: 100;
                 padding: 0 0;
                 text-align: center;
@@ -129,6 +129,7 @@
 
         @include breakpoint-down (small) {
             color: #6D357B;
+            background-color: white;
             font-family: $button-font;
             font-size: $font-vsm;
             font-weight: 600;

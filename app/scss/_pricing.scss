@@ -2,7 +2,7 @@
     height: 45rem;
 
     @include breakpoint-down(small) {
-        height: 41rem;
+        height: 42rem;
     }
 
     .logo {
@@ -70,6 +70,7 @@
     .button__pricing {
         text-align: center;
         color: #6D357B;
+        background-color: white;
         font-family: $button-font;
         font-size: $font-vsm;
         font-weight: 600;

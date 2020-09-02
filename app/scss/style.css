@@ -298,6 +298,12 @@ button,
   }
 }
 
+@media (max-width: 39.9375em) {
+  .header {
+    height: 45rem;
+  }
+}
+
 .header.open .overlay {
   display: block;
 }
@@ -478,7 +484,7 @@ button,
 
 @media (max-width: 39.9375em) {
   .hero__right {
-    margin-top: 4rem;
+    margin-top: 1.5rem;
     text-align: left;
     padding: 0 0;
   }
@@ -531,7 +537,7 @@ button,
 @media (max-width: 39.9375em) {
   .hero__right p {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 100;
     padding: 0 0;
     text-align: center;
@@ -569,6 +575,7 @@ button,
 @media (max-width: 39.9375em) {
   .hero button {
     color: #6D357B;
+    background-color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     font-weight: 600;
@@ -825,6 +832,7 @@ button,
 .services .button {
   text-align: center;
   color: #6D357B;
+  background-color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -952,6 +960,7 @@ button,
   .we .button {
     text-align: center;
     color: #6D357B;
+    background-color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     font-weight: 600;
@@ -1048,6 +1057,7 @@ button,
   .button__projects {
     text-align: center;
     color: #6D357B;
+    background-color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     font-weight: 600;
@@ -1174,7 +1184,7 @@ button,
 
 @media (max-width: 39.9375em) {
   .container__pricing {
-    height: 41rem;
+    height: 42rem;
   }
 }
 
@@ -1250,6 +1260,7 @@ button,
 .pricing .button__pricing {
   text-align: center;
   color: #6D357B;
+  background-color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -1272,7 +1283,7 @@ button,
 
 @media (max-width: 39.9375em) {
   .container__recomended {
-    height: 135rem;
+    height: 140rem;
   }
 }
 

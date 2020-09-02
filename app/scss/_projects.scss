@@ -65,6 +65,7 @@
     @include breakpoint-down(small) {
         text-align: center;
         color: #6D357B;
+        background-color: white;
         font-family: $button-font;
         font-size: $font-vsm;
         font-weight: 600;
