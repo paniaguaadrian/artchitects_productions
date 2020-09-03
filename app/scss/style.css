@@ -557,7 +557,7 @@ button,
   }
 }
 
-.hero button {
+.hero .button {
   color: #6D357B;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -573,7 +573,7 @@ button,
 }
 
 @media (max-width: 39.9375em) {
-  .hero button {
+  .hero .button {
     color: #6D357B;
     background-color: white;
     font-family: "Open Sans", sans-serif;
@@ -1257,7 +1257,7 @@ button,
           align-items: center;
 }
 
-.pricing .button__pricing {
+.pricing .button {
   text-align: center;
   color: #6D357B;
   background-color: white;
@@ -1858,7 +1858,7 @@ button,
 
 .historia__1 {
   text-align: left;
-  padding-right: 38rem;
+  padding-right: 10%;
   line-height: 1.7rem;
 }
 
@@ -1897,7 +1897,7 @@ button,
 
 .historia__2 {
   text-align: left;
-  padding-right: 38rem;
+  padding-right: 10%;
   line-height: 1.7rem;
 }
 
@@ -1935,7 +1935,7 @@ button,
 
 .historia__3 {
   text-align: left;
-  padding-right: 40rem;
+  padding-right: 10%;
   line-height: 2rem;
 }
 
@@ -1969,5 +1969,36 @@ button,
     font-size: 1rem;
     font-weight: 200;
   }
+}
+
+.modal {
+  color: black;
+  text-align: left;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #6D357B;
+  font-weight: 600 !important;
+}
+
+.btn-secondary:hover {
+  background-color: black;
+  color: white;
+  font-weight: 600 !important;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #6D357B;
+  font-weight: 600 !important;
+  border-color: black;
+}
+
+.btn-primary:hover {
+  background-color: #6D357B;
+  color: white;
+  font-weight: 600 !important;
+  border-color: black;
 }
 /*# sourceMappingURL=style.css.map */
