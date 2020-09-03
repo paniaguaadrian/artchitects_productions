@@ -329,7 +329,7 @@ button,
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(130deg, #4631ef 0%, #841eff 20%, #b041c1 85%);
+  background: linear-gradient(40deg, black, #6012c5);
 }
 
 .header__toggle > span {
@@ -1754,7 +1754,6 @@ button,
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(130deg, #4631ef 0%, #841eff 20%, #b041c1 85%);
 }
 
 .header__toggle > span {
