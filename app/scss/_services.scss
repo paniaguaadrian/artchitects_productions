@@ -47,6 +47,10 @@
         border-radius: 10px;
         align-items: right;
 
+        hr {
+            background-color: white;
+        }
+
         @include breakpoint-down(small) {
             width: 3em;
             margin: 1px;
@@ -60,6 +64,10 @@
         margin: 15px;
         border-radius: 10px;
         align-items: left;
+
+        hr {
+            background-color: white;
+        }
 
         @include breakpoint-down(small) {
             width: 3em;

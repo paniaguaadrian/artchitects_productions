@@ -5,9 +5,26 @@
     &__left {
         flex: 0;
         height: 50rem;
+        flex-direction: row;
+
+        .vertical-line {
+            border-left: 10px red;
+            width: 100px;
+            background-color: white;
+            height: 100%;
+            float: left;
+        }
 
         .hero__media {
-            padding-top: 30rem;
+            padding-top: 20rem;
+            flex-direction: column;
+            align-items: left;
+            text-align: left;
+
+            a {
+                padding-bottom: 2rem;
+                color: white !important;
+            }
         }
 
         img {
